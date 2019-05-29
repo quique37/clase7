@@ -1,0 +1,21 @@
+A Daniel le acaban de mandar una lista con sus calificaciones,
+ quiere saber si su promedio es suficiente para tener una beca este año, 
+ el promedio mínimo que necesita es 8, 
+ el programa recibirá la cantidad de calificaciones y 
+ un arreglo de calificaciones para poder calcular el resultado
+
+INICIO
+    LEER listaCalificaciones [10, 9, 8, 9, 8.5]
+    sumaCalificaciones = 0
+
+    Para indice = 0 MIENTRAS indice < listaCalificaciones.length AUMENTA indice = indice + 1
+    sumaCalificaciones = sumaCalificaciones + listaCalificaciones [indice]
+    FIN-PARA
+    promedio = sumaCalificaciones /listaCalificaciones.length 
+
+    SI promedio >= 8 ENTONCES
+    ESCRIBIR "BECA"
+    SINO
+    ESCRIBIR "SIN BECA"
+    FIN-SI
+FIN
